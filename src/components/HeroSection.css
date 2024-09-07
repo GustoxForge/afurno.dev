@@ -1,0 +1,103 @@
+:root {
+  --primary-color: #00aaff;
+  --secondary-color: #00ddff;
+  --bg-color: #1a1a1d;
+  --text-color: #fff;
+  --light-text-color: #cccccc;
+  --shadow-color: rgba(0, 170, 255, 0.3);
+  --border-radius: 12px;
+  --font-title: 'Poppins', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a, var(--bg-color));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero-title {
+  font-family: var(--font-title);
+  font-size: 5rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  animation: glowText 3s ease-in-out infinite alternate;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: var(--light-text-color);
+  text-transform: uppercase;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 36px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  border-radius: 50px;
+  box-shadow: 0 8px 15px var(--shadow-color);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  transform: translateY(-5px);
+  background-color: var(--secondary-color);
+  box-shadow: 0 15px 30px rgba(0, 170, 255, 0.5);
+}
+
+/* Effetto glow per il logo con dimensione aumentata */
+.hero-logo {
+  width: 250px; /* Aumentato da 150px a 250px */
+  margin-bottom: 20px;
+  animation: glowLogo 3s ease-in-out infinite alternate;
+}
+
+/* Animazione di illuminazione per il logo */
+@keyframes glowLogo {
+  0% {
+    filter: drop-shadow(0 0 10px var(--primary-color));
+  }
+  100% {
+    filter: drop-shadow(0 0 20px var(--secondary-color)) 
+            drop-shadow(0 0 40px var(--secondary-color)) 
+            drop-shadow(0 0 60px var(--secondary-color));
+  }
+}
+
+@keyframes glowText {
+  0% {
+    text-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-color), 0 0 30px var(--primary-color);
+  }
+  100% {
+    text-shadow: 0 0 30px var(--secondary-color), 0 0 60px var(--secondary-color), 0 0 90px var(--secondary-color);
+  }
+}

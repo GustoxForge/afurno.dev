@@ -1,0 +1,111 @@
+:root {
+  --primary-color: #00aaff;
+  --secondary-color: #00ddff;
+  --bg-color: #1a1a1d;
+  --text-color: #fff;
+  --light-text-color: #cccccc;
+  --shadow-color: rgba(0, 170, 255, 0.3);
+  --border-radius: 12px;
+  --font-title: 'Poppins', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.cost-calculator {
+  padding: 80px 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.cost-calculator h2 {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.service-step h3 {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.features-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.service-btn, .feature-btn {
+  margin: 10px;
+  padding: 20px 40px;
+  background-color: var(--card-bg-color);
+  color: var(--text-color);
+  border: 2px solid transparent;
+  border-radius: var(--border-radius);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.service-btn i, .feature-btn i {
+  font-size: 1.5rem;
+}
+
+.service-btn:hover, .feature-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 170, 255, 0.5);
+}
+
+.service-btn.selected, .feature-btn.selected {
+  border-color: var(--secondary-color);
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.next-button, .reset-button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 12px 36px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px var(--shadow-color);
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 20px;
+}
+
+.next-button:hover, .reset-button:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-5px);
+}
+
+.cost-result {
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+  margin-top: 40px;
+}
+
+@keyframes glowText {
+  0% {
+    text-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-color), 0 0 30px var(--primary-color);
+  }
+  100% {
+    text-shadow: 0 0 30px var(--secondary-color), 0 0 60px var(--secondary-color), 0 0 90px var(--secondary-color);
+  }
+}

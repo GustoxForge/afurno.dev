@@ -1,0 +1,145 @@
+:root {
+  --primary-color: #00aaff;
+  --secondary-color: #00ddff;
+  --bg-color: #1a1a1d;
+  --text-color: #fff;
+  --light-text-color: #cccccc;
+  --shadow-color: rgba(0, 170, 255, 0.3);
+  --border-radius: 12px;
+  --font-title: 'Poppins', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+}
+
+/* Sezione Chi Sono */
+.about-section {
+  text-align: center;
+  padding: 100px 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.about-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.1);
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--bg-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.about-content:hover {
+  transform: translateY(-10px);
+}
+
+.about-content h2 {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--light-text-color);
+  margin-bottom: 20px;
+}
+
+.about-content h3 {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-items: center;
+  margin-top: 40px;
+}
+
+.skill-box {
+  background-color: #1f1f1f;
+  border-radius: var(--border-radius);
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 170, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 600px;
+}
+
+.skill-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 170, 255, 0.4);
+}
+
+.icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-right: 15px;
+}
+
+.skill-details h4 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.skill-details p {
+  font-size: 1rem;
+  color: var(--light-text-color);
+  margin: 5px 0 0;
+}
+
+/* Pulsanti */
+.cta-button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 12px 36px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px var(--shadow-color);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.cta-button:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 170, 255, 0.5);
+}
+
+/* Effetti generali */
+@keyframes glowText {
+  0% {
+    text-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-color), 0 0 30px var(--primary-color);
+  }
+  100% {
+    text-shadow: 0 0 30px var(--secondary-color), 0 0 60px var(--secondary-color), 0 0 90px var(--secondary-color);
+  }
+}
