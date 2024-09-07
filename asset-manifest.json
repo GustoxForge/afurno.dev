@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/afurno.dev/static/css/main.e1e33a13.css",
+    "main.js": "/afurno.dev/static/js/main.ffcdb02a.js",
+    "static/js/453.91a5e953.chunk.js": "/afurno.dev/static/js/453.91a5e953.chunk.js",
+    "static/media/af_dev_logo.png": "/afurno.dev/static/media/af_dev_logo.be13976777882ce588f3.png",
+    "static/media/professional_image.jpeg": "/afurno.dev/static/media/professional_image.b04a6ece7db8c7c0431d.jpeg",
+    "index.html": "/afurno.dev/index.html",
+    "main.e1e33a13.css.map": "/afurno.dev/static/css/main.e1e33a13.css.map",
+    "main.ffcdb02a.js.map": "/afurno.dev/static/js/main.ffcdb02a.js.map",
+    "453.91a5e953.chunk.js.map": "/afurno.dev/static/js/453.91a5e953.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1e33a13.css",
+    "static/js/main.ffcdb02a.js"
+  ]
+}
